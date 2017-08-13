@@ -1,0 +1,9 @@
+version: '2'
+services:
+  ml:
+    build: .
+    ports:
+    - "127.0.0.1:8888:8888"
+    volumes:
+    - ./ml:/home/ml/ml
+    user: ml
